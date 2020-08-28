@@ -86,8 +86,8 @@ namespace AppWidgets {
             stack_grid.halign = Gtk.Align.CENTER;
             stack_grid.valign = Gtk.Align.CENTER;
             stack_grid.attach (label, 0, 0);
-            stack_grid.attach (scrolled_window, 0, 1, 1, 50);
-            stack_grid.attach (grid_actions, 0, 51);
+            stack_grid.attach (scrolled_window, 0, 1, 1, 25);
+            stack_grid.attach (grid_actions, 0, 26);
 
             this.add (stack_grid);
             this.show_all ();
@@ -96,21 +96,361 @@ namespace AppWidgets {
         private void text_changed () {
             this.bold_btn.sensitive = true;
             this.italic_btn.sensitive = true;
+            if (this.text_view.has_focus) {
+                this.source_text = this.text_view.buffer.text;
+            }
         }
         
         private void transform_to_original () {
             this.original_btn.sensitive = false;
-            this.text_view.sensitive = true;
+            this.text_view.editable = true;
+            this.text_view.buffer.text = this.source_text;
         }
 
         private void transform_to_bold () {
-            this.text_view.sensitive = false;
             this.original_btn.sensitive = true;
+            this.text_view.editable = false;
+            
+            var transformed_text = "";
+            
+            for (int i = 0; i < this.source_text.length; i++ ) {
+                string current_char = this.source_text.get_char (this.source_text.index_of_nth_char (i)).to_string ();
+                switch (current_char) {
+                    case "a":
+                        transformed_text += "𝐚";
+                        break;
+                    case "b":
+                        transformed_text += "𝐛";
+                        break;
+                    case "c":
+                        transformed_text += "𝐜";
+                        break;
+                    case "d":
+                        transformed_text += "𝐝";
+                        break;
+                    case "e":
+                        transformed_text += "𝐞";
+                        break;
+                    case "f":
+                        transformed_text += "𝐟";
+                        break;
+                    case "g":
+                        transformed_text += "𝐠";
+                        break;
+                    case "h":
+                        transformed_text += "𝐡";
+                        break;
+                    case "i":
+                        transformed_text += "𝐢";
+                        break;
+                    case "j":
+                        transformed_text += "𝐣";
+                        break;
+                    case "k":
+                        transformed_text += "𝐤";
+                        break;
+                    case "l":
+                        transformed_text += "𝐥";
+                        break;
+                    case "m":
+                        transformed_text += "𝐦";
+                        break;
+                    case "n":
+                        transformed_text += "𝐧";
+                        break;
+                    case "o":
+                        transformed_text += "𝐨";
+                        break;
+                    case "p":
+                        transformed_text += "𝐩";
+                        break;
+                    case "q":
+                        transformed_text += "𝐪";
+                        break;
+                    case "r":
+                        transformed_text += "𝐫";
+                        break;
+                    case "s":
+                        transformed_text += "𝐬";
+                        break;
+                    case "t":
+                        transformed_text += "𝐭";
+                        break;
+                    case "u":
+                        transformed_text += "𝐮";
+                        break;
+                    case "v":
+                        transformed_text += "𝐯";
+                        break;
+                    case "w":
+                        transformed_text += "𝐰";
+                        break;
+                    case "x":
+                        transformed_text += "𝐱";
+                        break;
+                    case "y":
+                        transformed_text += "𝐲";
+                        break;
+                    case "z":
+                        transformed_text += "𝐳";
+                        break;
+                    case "A":
+                        transformed_text += "𝐀";
+                        break;
+                    case "B":
+                        transformed_text += "𝐁";
+                        break;
+                    case "C":
+                        transformed_text += "𝐂";
+                        break;
+                    case "D":
+                        transformed_text += "𝐃";
+                        break;
+                    case "E":
+                        transformed_text += "𝐄";
+                        break;
+                    case "F":
+                        transformed_text += "𝐅";
+                        break;
+                    case "G":
+                        transformed_text += "𝐆";
+                        break;
+                    case "H":
+                        transformed_text += "𝐇";
+                        break;
+                    case "I":
+                        transformed_text += "𝐈";
+                        break;
+                    case "J":
+                        transformed_text += "𝐉";
+                        break;
+                    case "K":
+                        transformed_text += "𝐊";
+                        break;
+                    case "L":
+                        transformed_text += "𝐋";
+                        break;
+                    case "M":
+                        transformed_text += "𝐌";
+                        break;
+                    case "N":
+                        transformed_text += "𝐍";
+                        break;
+                    case "O":
+                        transformed_text += "𝐎";
+                        break;
+                    case "P":
+                        transformed_text += "𝐏";
+                        break;
+                    case "Q":
+                        transformed_text += "𝐐";
+                        break;
+                    case "R":
+                        transformed_text += "𝐑";
+                        break;
+                    case "S":
+                        transformed_text += "𝐒";
+                        break;
+                    case "T":
+                        transformed_text += "𝐓";
+                        break;
+                    case "U":
+                        transformed_text += "𝐔";
+                        break;
+                    case "V":
+                        transformed_text += "𝐕";
+                        break;
+                    case "W":
+                        transformed_text += "𝐖";
+                        break;
+                    case "X":
+                        transformed_text += "𝐗";
+                        break;
+                    case "Y":
+                        transformed_text += "𝐘";
+                        break;
+                    case "Z":
+                        transformed_text += "𝐙";
+                        break;
+                    default:
+                        transformed_text += current_char;
+                        break;
+                }
+            }
+            this.text_view.buffer.text = transformed_text;
         }
                 
         private void transform_to_italic () {
-            this.text_view.sensitive = false;
             this.original_btn.sensitive = true;
+            this.text_view.editable = false;
+            
+            var transformed_text = "";
+            
+            for (int i = 0; i < this.source_text.length; i++ ) {
+                string current_char = this.source_text.get_char (this.source_text.index_of_nth_char (i)).to_string ();
+                switch (current_char) {
+                    case "a":
+                        transformed_text += "𝑎";
+                        break;
+                    case "b":
+                        transformed_text += "𝑏";
+                        break;
+                    case "c":
+                        transformed_text += "𝑐";
+                        break;
+                    case "d":
+                        transformed_text += "𝑑";
+                        break;
+                    case "e":
+                        transformed_text += "𝑒";
+                        break;
+                    case "f":
+                        transformed_text += "𝑓";
+                        break;
+                    case "g":
+                        transformed_text += "𝑔";
+                        break;
+                    case "h":
+                        transformed_text += "𝒉";
+                        break;
+                    case "i":
+                        transformed_text += "𝑖";
+                        break;
+                    case "j":
+                        transformed_text += "𝑗";
+                        break;
+                    case "k":
+                        transformed_text += "𝑘";
+                        break;
+                    case "l":
+                        transformed_text += "𝑙";
+                        break;
+                    case "m":
+                        transformed_text += "𝑚";
+                        break;
+                    case "n":
+                        transformed_text += "𝑛";
+                        break;
+                    case "o":
+                        transformed_text += "𝑜";
+                        break;
+                    case "p":
+                        transformed_text += "𝑝";
+                        break;
+                    case "q":
+                        transformed_text += "𝑞";
+                        break;
+                    case "r":
+                        transformed_text += "𝑟";
+                        break;
+                    case "s":
+                        transformed_text += "𝑠";
+                        break;
+                    case "t":
+                        transformed_text += "𝑡";
+                        break;
+                    case "u":
+                        transformed_text += "𝑢";
+                        break;
+                    case "v":
+                        transformed_text += "𝑣";
+                        break;
+                    case "w":
+                        transformed_text += "𝑤";
+                        break;
+                    case "x":
+                        transformed_text += "𝑥";
+                        break;
+                    case "y":
+                        transformed_text += "𝑦";
+                        break;
+                    case "z":
+                        transformed_text += "𝑧";
+                        break;
+                    case "A":
+                        transformed_text += "𝐴";
+                        break;
+                    case "B":
+                        transformed_text += "𝐵";
+                        break;
+                    case "C":
+                        transformed_text += "𝐶";
+                        break;
+                    case "D":
+                        transformed_text += "𝐷";
+                        break;
+                    case "E":
+                        transformed_text += "𝐸";
+                        break;
+                    case "F":
+                        transformed_text += "𝐹";
+                        break;
+                    case "G":
+                        transformed_text += "𝐺";
+                        break;
+                    case "H":
+                        transformed_text += "𝐻";
+                        break;
+                    case "I":
+                        transformed_text += "𝐼";
+                        break;
+                    case "J":
+                        transformed_text += "𝐽";
+                        break;
+                    case "K":
+                        transformed_text += "𝐾";
+                        break;
+                    case "L":
+                        transformed_text += "𝐿";
+                        break;
+                    case "M":
+                        transformed_text += "𝑀";
+                        break;
+                    case "N":
+                        transformed_text += "𝑁";
+                        break;
+                    case "O":
+                        transformed_text += "𝑂";
+                        break;
+                    case "P":
+                        transformed_text += "𝑃";
+                        break;
+                    case "Q":
+                        transformed_text += "𝑄";
+                        break;
+                    case "R":
+                        transformed_text += "𝑅";
+                        break;
+                    case "S":
+                        transformed_text += "𝑆";
+                        break;
+                    case "T":
+                        transformed_text += "𝑇";
+                        break;
+                    case "U":
+                        transformed_text += "𝑈";
+                        break;
+                    case "V":
+                        transformed_text += "𝑉";
+                        break;
+                    case "W":
+                        transformed_text += "𝑊";
+                        break;
+                    case "X":
+                        transformed_text += "𝑋";
+                        break;
+                    case "Y":
+                        transformed_text += "𝑌";
+                        break;
+                    case "Z":
+                        transformed_text += "𝑍";
+                        break;
+                    default:
+                        transformed_text += current_char;
+                        break;
+                }
+            }
+            this.text_view.buffer.text = transformed_text;
         }
     }
 }
