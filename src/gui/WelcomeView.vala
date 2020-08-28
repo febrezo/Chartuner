@@ -27,9 +27,10 @@ namespace AppWidgets {
 
         construct {
             this.title = _("Chartuner");
-            this.subtitle = _("A sample application");
-            this.append ("document-new", _("Go to the main window"), _("The standard behaviour of the application"));
-            this.append ("info", _("Looking for help?"), _("Get support from online resources"));
+            this.subtitle = _("A simple application to easily transform your text");
+            this.append ("font", _("Style your text"), _("Go to the transformation window!"));
+            this.append ("dialog-question", _("What does this do?"), _("Get additional information of what happends under the hood"));
+            this.append ("html", _("Wanna contribute?"), _("You can help to improve the application!"));
         }
     }
 }

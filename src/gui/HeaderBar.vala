@@ -33,7 +33,7 @@ namespace AppWidgets {
         public HeaderBar () {
             this.show_close_button = true;
             this.title = _("Chartuner");
-            //this.subtitle = _();
+            this.subtitle = _("Because textfields can be hacked…");
 
             // Set Menu
             // --------
@@ -50,26 +50,10 @@ namespace AppWidgets {
 
             // Add menu buttons
             // ----------------
-
-            // New button
-            new_btn = new Gtk.Button.from_icon_name ("document-new", Gtk.IconSize.LARGE_TOOLBAR);
-            new_btn.tooltip_text = _("Go to main window");
-            this.pack_start (new_btn);
-
-            // Speak button
-            speak_btn = new Gtk.Button.from_icon_name ("audio-speakers", Gtk.IconSize.LARGE_TOOLBAR);
-            speak_btn.tooltip_text = _("Speak something");
-            this.pack_start (speak_btn);
-
             // Menu button
             settings_menu_btn = new Gtk.Button.from_icon_name ("open-menu-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             settings_menu_btn.tooltip_text = _("Open menu");
             this.pack_end (settings_menu_btn);
-
-            // Add operation button
-            add_operation_btn = new Gtk.Button.from_icon_name ("event-new", Gtk.IconSize.LARGE_TOOLBAR);
-            add_operation_btn.tooltip_text = _("Add new operation");
-            this.pack_end (add_operation_btn);
         }
     }
 }

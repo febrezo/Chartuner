@@ -33,7 +33,7 @@ namespace AppWidgets {
         construct {
             this.set_destroy_with_parent (true);
           	this.set_modal (true);
-            this.logo_icon_name = "computer-laptop";
+            this.logo_icon_name = "font";
 
           	this.artists = null;
           	this.authors = {"Félix Brezo (felixbrezo@disroot.org)"};
@@ -41,7 +41,7 @@ namespace AppWidgets {
           	this.translator_credits = _("Félix Brezo (felixbrezo@disroot.org)");
 
           	this.program_name = _("Chartuner");
-          	this.comments = _("Just another template");
+          	this.comments = _("A simple application to easily transform your text");
           	this.copyright = _("Copyright © 2020 Félix Brezo");
           	this.version = _("1.0");
 
