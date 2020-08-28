@@ -1,11 +1,11 @@
 {
-    "app-id" : "com.felixbrezo.GraniteTemplate",
+    "app-id" : "com.felixbrezo.Chartuner",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "3.36",
     "base" : "io.elementary.BaseApp",
     "base-version" : "juno-19.08",
     "sdk" : "org.gnome.Sdk",
-    "command" : "com.felixbrezo.GraniteTemplate",
+    "command" : "com.felixbrezo.Chartuner",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -13,7 +13,7 @@
         "--socket=wayland",
         "--filesystem=home",
         "--talk-name=org.gnome.SessionManager",
-        "--metadata=X-DConf=migrate-path=com/felixbrezo/GraniteTemplate/",
+        "--metadata=X-DConf=migrate-path=com/felixbrezo/Chartuner/",
     		"--socket=pulseaudio",
         "--device=dri"
     ],
@@ -26,13 +26,13 @@
     ],
     "modules" : [
         {
-            "name" : "com.felixbrezo.GraniteTemplate",
+            "name" : "com.felixbrezo.Chartuner",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "dir",
-                    "path" : "/home/felix/Documentos/Proyectos/GraniteTemplate"
+                    "path" : "/home/felix/Documentos/Proyectos/Chartuner"
                 }
             ]
         }

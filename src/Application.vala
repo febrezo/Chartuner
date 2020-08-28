@@ -19,12 +19,12 @@
 * Authored by: Félix Breo <felixbrezo@disroot.orgm>
 */
 
-namespace GraniteTemplate {
-    public class GraniteTemplateApp : Gtk.Application {
+namespace Chartuner {
+    public class ChartunerApp : Gtk.Application {
 
-        public GraniteTemplateApp () {
+        public ChartunerApp () {
             Object (
-                application_id: "com.felixbrezo.GraniteTemplate",
+                application_id: "com.felixbrezo.Chartuner",
                 flags: ApplicationFlags.FLAGS_NONE
             );
         }
@@ -35,7 +35,7 @@ namespace GraniteTemplate {
         }
 
         public static int main (string[] args) {
-            var app = new GraniteTemplateApp ();
+            var app = new ChartunerApp ();
             return app.run (args);
         }
     }

@@ -1,5 +1,5 @@
 # Project name and programming language
-project('com.felixbrezo.GraniteTemplate', 'vala', 'c')
+project('com.felixbrezo.Chartuner', 'vala', 'c')
 
 # Include the translations module
 i18n = import('i18n')

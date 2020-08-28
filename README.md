@@ -1,8 +1,8 @@
-# GraniteTemplate
+# Chartuner
 
 This is a template repository to ease the process of creating GUI with Vala based on GTK and Granite.
 
-## Manually install the GraniteTemplate
+## Manually install the Chartuner
 
 You'll need the following dependencies:
 
@@ -13,8 +13,8 @@ You'll need the following dependencies:
 Then, you SHOULD clone the repository:
 
 ```
-git clone https://github.com/febrezo/GraniteTemplate.git
-cd GraniteTemplate
+git clone https://github.com/febrezo/Chartuner.git
+cd Chartuner
 ```
 
 Run `meson build` to configure the build environment. Change to the build directory and run `ninja test` to build and run automated tests.
@@ -28,14 +28,14 @@ ninja test
 The application found under the build folder can now be launched:
 
 ```
-./com.felixbrezo.GraniteTemplate
+./com.felixbrezo.Chartuner
 ```
 
-To optionally install, use `ninja install`, then execute with `com.felixbrezo.GraniteTemplate`.
+To optionally install, use `ninja install`, then execute with `com.felixbrezo.Chartuner`.
 
 ```
 ninja install
-com.felixbrezo.GraniteTemplate
+com.felixbrezo.Chartuner
 ```
 
 Tou SHOULD be able to explore the capabilities of the default application.

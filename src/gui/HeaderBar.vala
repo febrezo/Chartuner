@@ -32,7 +32,7 @@ namespace AppWidgets {
 
         public HeaderBar () {
             this.show_close_button = true;
-            this.title = _("GraniteTemplate");
+            this.title = _("Chartuner");
             //this.subtitle = _();
 
             // Set Menu

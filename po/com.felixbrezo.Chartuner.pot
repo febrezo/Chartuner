@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.felixbrezo.GraniteTemplate package.
+# This file is distributed under the same license as the com.felixbrezo.Chartuner package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: com.felixbrezo.GraniteTemplate\n"
+"Project-Id-Version: com.felixbrezo.Chartuner\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-23 09:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -17,32 +17,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/com.felixbrezo.GraniteTemplate.desktop.in:4
-#: data/com.felixbrezo.GraniteTemplate.appdata.xml.in:6 src/Window.vala:50
+#: data/com.felixbrezo.Chartuner.desktop.in:4
+#: data/com.felixbrezo.Chartuner.appdata.xml.in:6 src/Window.vala:50
 #: src/gui/AboutDialog.vala:43 src/gui/HeaderBar.vala:35
 #: src/gui/WelcomeView.vala:29
-msgid "GraniteTemplate"
+msgid "Chartuner"
 msgstr ""
 
-#: data/com.felixbrezo.GraniteTemplate.desktop.in:5
-#: data/com.felixbrezo.GraniteTemplate.appdata.xml.in:7
+#: data/com.felixbrezo.Chartuner.desktop.in:5
+#: data/com.felixbrezo.Chartuner.appdata.xml.in:7
 #: src/gui/AboutDialog.vala:44
 msgid "Just another template"
 msgstr ""
 
-#: data/com.felixbrezo.GraniteTemplate.desktop.in:6
+#: data/com.felixbrezo.Chartuner.desktop.in:6
 msgid "A template for developing new Vala applications"
 msgstr ""
 
-#: data/com.felixbrezo.GraniteTemplate.desktop.in:10
+#: data/com.felixbrezo.Chartuner.desktop.in:10
 msgid "computer-laptop"
 msgstr ""
 
-#: data/com.felixbrezo.GraniteTemplate.desktop.in:12
+#: data/com.felixbrezo.Chartuner.desktop.in:12
 msgid "Development;Personal;"
 msgstr ""
 
-#: data/com.felixbrezo.GraniteTemplate.appdata.xml.in:9
+#: data/com.felixbrezo.Chartuner.appdata.xml.in:9
 msgid "A template for developing new Vala applications."
 msgstr ""
 
@@ -75,7 +75,7 @@ msgid "1.0"
 msgstr ""
 
 #: src/gui/AboutDialog.vala:51
-msgid "https://github.com/febrezo/GraniteTemplate"
+msgid "https://github.com/febrezo/Chartuner"
 msgstr ""
 
 #: src/gui/AboutDialog.vala:52
@@ -148,7 +148,7 @@ msgid "About…"
 msgstr ""
 
 #: src/gui/SettingsMenu.vala:89
-msgid "https://github.com/febrezo/GraniteTemplate/master/doc/support/en/"
+msgid "https://github.com/febrezo/Chartuner/master/doc/support/en/"
 msgstr ""
 
 #: src/gui/WelcomeView.vala:30

@@ -22,7 +22,7 @@
 using AppUtils;
 using AppWidgets;
 
-namespace GraniteTemplate {
+namespace Chartuner {
     public class Window : Gtk.ApplicationWindow {
         // Window elements
         private HeaderBar header_bar;
@@ -47,7 +47,7 @@ namespace GraniteTemplate {
             this.default_height = 800;
             this.default_width = 1024;
             this.header_bar = new HeaderBar ();
-            this.toast = new Granite.Widgets.Toast (_("GraniteTemplate"));
+            this.toast = new Granite.Widgets.Toast (_("Chartuner"));
 
             // Define views
             // ------------

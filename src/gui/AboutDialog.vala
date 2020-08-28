@@ -40,7 +40,7 @@ namespace AppWidgets {
           	this.documenters = {"Félix Brezo (felixbrezo@disroot.org)"};
           	this.translator_credits = _("Félix Brezo (felixbrezo@disroot.org)");
 
-          	this.program_name = _("GraniteTemplate");
+          	this.program_name = _("Chartuner");
           	this.comments = _("Just another template");
           	this.copyright = _("Copyright © 2020 Félix Brezo");
           	this.version = _("1.0");
@@ -48,7 +48,7 @@ namespace AppWidgets {
           	this.license = "GPLv3.0+ (https://www.gnu.org/licenses/gpl-3.0.txt)";
           	this.wrap_license = true;
 
-          	this.website = _("https://github.com/febrezo/GraniteTemplate");
+          	this.website = _("https://github.com/febrezo/Chartuner");
           	this.website_label = _("Website");
 
             this.response.connect ((response_id) => {
