@@ -45,8 +45,12 @@ namespace Chartuner {
             // Set Windows defaults
             // --------------------
             this.default_height = 800;
-            this.default_width = 1024;
+            this.default_width = 600;
+            this.resizable = false;
             this.header_bar = new HeaderBar ();
+            var color = Gdk.RGBA();
+            color.parse("#ADAD92");
+            Granite.Widgets.Utils.set_color_primary (this, color);
             this.toast = new Granite.Widgets.Toast (_("Chartuner"));
 
             // Define views

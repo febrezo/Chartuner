@@ -1,8 +1,8 @@
 [Desktop Entry]
 
 Name=Chartuner
-GenericName=Just another template
-Comment=A template for developing new Vala applications
+GenericName=A simple application to transform your text
+Comment=Transform the characters you type to bold or italics. No formatting, simply Unicode characters!
 Categories=Utility;
 Exec=com.felixbrezo.Chartuner
 Icon=com.felixbrezo.Chartuner

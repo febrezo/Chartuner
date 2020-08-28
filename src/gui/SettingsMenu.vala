@@ -30,23 +30,6 @@ namespace AppWidgets {
 
             // Load menu elements
             // ------------------
-
-            // Define the theme switch
-            var mode_label = new Gtk.Label (_("Theme"));
-
-            var mode_switch = new Granite.ModeSwitch.from_icon_name (
-                "display-brightness-symbolic",
-                "weather-clear-night-symbolic"
-            );
-            mode_switch.primary_icon_tooltip_text = _("Light background");
-            mode_switch.secondary_icon_tooltip_text = _("Dark background");
-            mode_switch.bind_property (
-                "active",
-                gtk_settings,
-                "gtk-application-prefer-dark-theme",
-                GLib.BindingFlags.BIDIRECTIONAL
-            );
-
             // Define the Help dialog
             var support_label = new Gtk.Label (_("Looking for help?"));
             var support_menu_item = new Gtk.ModelButton ();
@@ -71,11 +54,9 @@ namespace AppWidgets {
             menu_box.margin_bottom = 12;
             menu_box.column_spacing = 10;
             menu_box.row_spacing = 10;
-            menu_box.attach (mode_label, 0, 0);
-            menu_box.attach (mode_switch, 1, 0);
-            menu_box.attach (new Gtk.Separator(Gtk.Orientation.HORIZONTAL), 0, 2, 2);
-            menu_box.attach (support_menu_item, 0, 3, 2);
-            menu_box.attach (about_menu_item, 0, 4, 2);
+            menu_box.attach (support_menu_item, 0, 0, 2);
+            menu_box.attach (new Gtk.Separator(Gtk.Orientation.HORIZONTAL), 0, 1, 2);
+            menu_box.attach (about_menu_item, 0, 3, 2);
 
             // Pack it
             this.add(menu_box);
