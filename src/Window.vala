@@ -44,8 +44,8 @@ namespace Chartuner {
         construct {
             // Set Windows defaults
             // --------------------
-            this.default_height = 600;
-            this.default_width = 400;
+            this.default_height = 500;
+            this.default_width = 600;
             this.resizable = false;
             this.header_bar = new HeaderBar ();
             var color = Gdk.RGBA();

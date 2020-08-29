@@ -4,11 +4,12 @@ Copyright (C) 2020  Félix Brezo (@febrezo)
 
 [![License](https://img.shields.io/badge/license-GNU%20Affero%20General%20Public%20License%20Version%203%20or%20Later-blue.svg)]()
 
-Facefy is an application that wraps the capabilities of well-known technologies like Dlib and face_recognition using a custom JSON RPC daemon created ad-hoc in Python 3.6+ (named `pyfaces`) and a GTK-based desktop environment.
+Chartuner is a stupid application written in Vala and deployed using Flatpak that simply reencodes the string provided in the GUI using unicode characters for bold or italic text. Really. It doesn't do anything else. :D
 
 ![Welcome view](data/welcome.png)
 ![Transforms view](data/transform.png)
 ![Bold result](data/bold.png)
+![About](data/about.png)
 
 ## 1. License: GNU GPLv3+
 
@@ -44,10 +45,10 @@ flatpak remote-add --if-not-exists febrehub https://felixbrezo.com/febrehub.flat
 
 The aforementioned commands will require `root` permissions to add the remotes, but they can also be installed for the current system using `--user`.
 
-Once added the repos, use the following to install:
+Once the repo has been added, use the following to install:
 
 ```
-flatpak install https://felixbrezo.com/tools/com.felixbrezo.Chartuner.flatpakref
+flatpak install com.felixbrezo.Chartuner
 ```
 
 Note that if you didn't have the Flathub repository installed it will require you to enter the root password. The Flathub repository is used to grab some dependencies which are easily reachable from there.
