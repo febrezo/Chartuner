@@ -7,7 +7,8 @@ Copyright (C) 2020  Félix Brezo (@febrezo)
 Facefy is an application that wraps the capabilities of well-known technologies like Dlib and face_recognition using a custom JSON RPC daemon created ad-hoc in Python 3.6+ (named `pyfaces`) and a GTK-based desktop environment.
 
 ![Welcome view](data/welcome.png)
-![Comparisons view](data/transform.png)
+![Transforms view](data/transform.png)
+![Bold result](data/bold.png)
 
 ## 1. License: GNU GPLv3+
 
