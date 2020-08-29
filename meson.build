@@ -18,12 +18,7 @@ subdir('po')
 # Install the icon
 # TODO: remove in favour of subdir for easier maintenance
 install_data(
-    join_paths('data', meson.project_name() + '.svg'),
-    install_dir: join_paths(get_option('datadir'), 'icons')
-)
-
-install_data(
-    join_paths('data', 'bachfugue.wav'),
+    join_paths('data', meson.project_name() + '.png'),
     install_dir: join_paths(get_option('datadir'), 'icons')
 )
 
