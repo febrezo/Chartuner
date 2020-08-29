@@ -31,8 +31,9 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "dir",
-                    "path" : "/home/felix/Documentos/Proyectos/Chartuner"
+                    "type" : "git",
+                    "url" : "https://github.com/febrezo/Chartuner.git",
+                    "branch": "master"
                 }
             ]
         }
