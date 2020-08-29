@@ -1,7 +1,7 @@
 [Desktop Entry]
 
 Name=Chartuner
-GenericName=A simple application to transform your text
+GenericName=A simple application to transform text
 Comment=Transform the characters you type to bold or italics. No formatting, simply Unicode characters!
 Categories=Utility;
 Exec=com.felixbrezo.Chartuner

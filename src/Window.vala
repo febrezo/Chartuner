@@ -59,9 +59,6 @@ namespace Chartuner {
 
             // Define window events
             // --------------------
-            this.header_bar.add_operation_btn.clicked.connect (on_add_operation_clicked);
-            this.header_bar.new_btn.clicked.connect (on_new_clicked);
-            this.header_bar.speak_btn.clicked.connect (on_speak_clicked);
             this.header_bar.settings_menu_btn.clicked.connect (on_menu_clicked);
             this.header_bar.menu.about_dialog = new AboutDialog (this);
 
@@ -72,6 +69,9 @@ namespace Chartuner {
                         break;
                     case 1:
                         this.on_help_clicked ();
+                        break;
+                    case 2:
+                        this.on_code_clicked ();
                         break;
                 }
             });
@@ -84,12 +84,12 @@ namespace Chartuner {
 
         // Events
         // ======
-        private void on_new_clicked () {
-            // Remove voerlay panel and welcome view if present
+        public void on_new_clicked () {
+            // Remove overlay panel and welcome view if present
             remove (overlay_panel);
             remove (welcome_view);
 
-            main_view = new MainView ();
+            main_view = new MainView (this);
 
             // Create overlay
             overlay_panel = new Gtk.Overlay ();
@@ -100,41 +100,30 @@ namespace Chartuner {
             show_all ();
         }
 
-        private void on_speak_clicked () {
-            var command4 = "paplay /app/share/icons/bachfugue.wav ";
-            print ("Sound: %s\n".printf (command4));
-        }
-
-        private void on_add_operation_clicked () {
-            var dialog = new SampleDialog (this);
-            var tmp_result = dialog.launch_dialog ();
-
-            if (tmp_result != null) {
-                set_clipboard_value (tmp_result);
-                this.show_toast (tmp_result);
-            } else {
-                this.show_toast (_("Nothing done because something wrong happened"));
-            }
-
-            dialog.destroy ();
-        }
-
         private void on_help_clicked () {
             try {
-                AppInfo.launch_default_for_uri (_("https://github.com/febrezo/valoro/master/doc/support/en/"), null);
+                AppInfo.launch_default_for_uri (_("https://github.com/febrezo/Chartuner/master/doc/support/en/"), null);
             } catch (Error e) {
                 warning (e.message);
             }
         }
 
-        private void show_toast (string message) {
-            toast.title = message;
-            toast.send_notification ();
+        private void on_code_clicked () {
+            try {
+                AppInfo.launch_default_for_uri (_("https://github.com/febrezo/Chartuner"), null);
+            } catch (Error e) {
+                warning (e.message);
+            }
         }
 
         private void on_menu_clicked (Gtk.Button sender) {
             this.header_bar.menu.set_relative_to (sender);
             this.header_bar.menu.show_all ();
+        }
+        
+        public void show_toast (string message) {
+            toast.title = message;
+            toast.send_notification ();
         }
     }
 }

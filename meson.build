@@ -58,11 +58,9 @@ executable(
   'src/Application.vala',
   'src/Window.vala',
   'src/core/Clipboard.vala',
-  'src/core/SomethingHelpful.vala',
   'src/gui/AboutDialog.vala',
   'src/gui/HeaderBar.vala',
   'src/gui/MainView.vala',
-  'src/gui/SampleDialog.vala',
   'src/gui/SettingsMenu.vala',
   'src/gui/WelcomeView.vala',
   dependencies: [

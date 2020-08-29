@@ -4,7 +4,7 @@
   <id>com.felixbrezo.Chartuner</id>
   <metadata_license>GPLv3</metadata_license>
   <name>Chartuner</name>
-  <summary>A simple application to transform your text</summary>
+  <summary>A simple application to transform text</summary>
   <description>
     <p>Transform the characters you type to bold or italics. No formatting, simply Unicode characters!</p>
   </description>

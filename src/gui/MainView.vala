@@ -19,13 +19,22 @@
 * Authored by: Félix Breo <felixbrezo@disroot.orgm>
 */
 
+using AppUtils;
+
 namespace AppWidgets {
     public class MainView : Gtk.Frame {
+        public Chartuner.Window window { get; construct; }
         private string source_text;
         private Gtk.TextView text_view;
         private Gtk.Button original_btn;
         private Gtk.Button bold_btn;
         private Gtk.Button italic_btn;
+        
+        public MainView (Chartuner.Window parent) {
+            Object (
+                window: parent 
+            );
+        }
         
         construct {
             var label = new Gtk.Label (_("Type the text to transform"));
@@ -105,6 +114,7 @@ namespace AppWidgets {
             this.original_btn.sensitive = false;
             this.text_view.editable = true;
             this.text_view.buffer.text = this.source_text;
+            window.show_toast (_("Original text recovered"));
         }
 
         private void transform_to_bold () {
@@ -278,6 +288,8 @@ namespace AppWidgets {
                 }
             }
             this.text_view.buffer.text = transformed_text;
+            set_clipboard_value (transformed_text);
+            window.show_toast (_("Text converted to bold and copied to the clipboard"));
         }
                 
         private void transform_to_italic () {
@@ -451,6 +463,8 @@ namespace AppWidgets {
                 }
             }
             this.text_view.buffer.text = transformed_text;
+            set_clipboard_value (transformed_text);
+            window.show_toast (_("Text converted to italic and copied to the clipboard"));
         }
     }
 }

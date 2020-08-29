@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.felixbrezo.Chartuner\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 09:19+0200\n"
+"POT-Creation-Date: 2020-08-29 03:22+0200\n"
 "PO-Revision-Date: 2020-06-22 21:40+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,151 +17,131 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/com.felixbrezo.Chartuner.desktop.in:4
-#: data/com.felixbrezo.Chartuner.appdata.xml.in:6 src/Window.vala:50
+#: data/com.felixbrezo.Chartuner.appdata.xml.in:6 src/Window.vala:54
 #: src/gui/AboutDialog.vala:43 src/gui/HeaderBar.vala:35
 #: src/gui/WelcomeView.vala:29
 msgid "Chartuner"
-msgstr ""
+msgstr "Chartuner"
 
 #: data/com.felixbrezo.Chartuner.desktop.in:5
 #: data/com.felixbrezo.Chartuner.appdata.xml.in:7
-#: src/gui/AboutDialog.vala:44
-msgid "Just another template"
-msgstr ""
+msgid "A simple application to transform text"
+msgstr "Una senzilla aplicació per transformar text"
 
 #: data/com.felixbrezo.Chartuner.desktop.in:6
-msgid "A template for developing new Vala applications"
+#: data/com.felixbrezo.Chartuner.appdata.xml.in:9
+msgid ""
+"Transform the characters you type to bold or italics. No formatting, simply "
+"Unicode characters!"
 msgstr ""
+"Transforma els caràcters que escriviu en negreta o cursiva. No hi ha format, "
+"simplement caràcters Unicode!"
 
-#: data/com.felixbrezo.Chartuner.desktop.in:10
-msgid "computer-laptop"
-msgstr ""
+#: data/com.felixbrezo.Chartuner.desktop.in:9
+msgid "com.felixbrezo.Chartuner"
+msgstr "com.felixbrezo.Chartuner"
 
 #: data/com.felixbrezo.Chartuner.desktop.in:12
 msgid "Development;Personal;"
-msgstr ""
+msgstr "Desenvolupament;Personal;"
 
-#: data/com.felixbrezo.Chartuner.appdata.xml.in:9
-msgid "A template for developing new Vala applications."
-msgstr ""
+#: src/Window.vala:105 src/gui/SettingsMenu.vala:70
+msgid "https://github.com/febrezo/Chartuner/master/doc/support/en/"
+msgstr "https://github.com/febrezo/Chartuner/master/doc/support/ca/"
 
-#: src/Window.vala:100
-msgid "english"
-msgstr ""
-
-#: src/Window.vala:100
-msgid "Hello hackers! I am a computer!"
-msgstr ""
-
-#: src/Window.vala:111
-msgid "Nothing done because something wrong happened"
-msgstr ""
-
-#: src/Window.vala:119
-msgid "https://github.com/febrezo/valoro/master/doc/support/en/"
-msgstr ""
+#: src/Window.vala:113 src/gui/AboutDialog.vala:51
+msgid "https://github.com/febrezo/Chartuner"
+msgstr "https://github.com/febrezo/Chartuner"
 
 #: src/gui/AboutDialog.vala:41
 msgid "Félix Brezo (felixbrezo@disroot.org)"
-msgstr ""
+msgstr "Félix Brezo (felixbrezo@disroot.org)"
+
+#: src/gui/AboutDialog.vala:44
+msgid "A simple application to easily transform your text"
+msgstr "Una senzilla aplicació per transformar text fàcilment"
 
 #: src/gui/AboutDialog.vala:45
 msgid "Copyright © 2020 Félix Brezo"
-msgstr ""
+msgstr "Copyright © 2020 Félix Brezo"
 
 #: src/gui/AboutDialog.vala:46
 msgid "1.0"
-msgstr ""
-
-#: src/gui/AboutDialog.vala:51
-msgid "https://github.com/febrezo/Chartuner"
-msgstr ""
+msgstr "1.0"
 
 #: src/gui/AboutDialog.vala:52
 msgid "Website"
-msgstr ""
+msgstr "Lloc web"
 
-#: src/gui/HeaderBar.vala:56
-msgid "Go to main window"
-msgstr ""
+#: src/gui/HeaderBar.vala:36
+msgid "Because textfields can be hacked…"
+msgstr "Perquè els camps de text es poden hackear…"
 
-#: src/gui/HeaderBar.vala:61
-msgid "Speak something"
-msgstr ""
-
-#: src/gui/HeaderBar.vala:66
+#: src/gui/HeaderBar.vala:46
 msgid "Open menu"
-msgstr ""
+msgstr "Obrir menu"
 
-#: src/gui/HeaderBar.vala:71
-msgid "Add new operation"
-msgstr ""
+#: src/gui/MainView.vala:40
+msgid "Type the text to transform"
+msgstr "Escriu el text per transformar"
 
-#: src/gui/MainView.vala:25
-msgid "Some sample text"
-msgstr ""
+#: src/gui/MainView.vala:66
+msgid "Recover original format"
+msgstr "Recupera el text original"
 
-#: src/gui/SampleDialog.vala:30
-msgid "Sample dialog"
-msgstr ""
+#: src/gui/MainView.vala:71
+msgid "Transform characters to bold"
+msgstr "Transforma els caràcters a negreta"
 
-#: src/gui/SampleDialog.vala:31
-msgid "Just showing some text"
-msgstr ""
+#: src/gui/MainView.vala:76
+msgid "Transform characters to italic"
+msgstr "Transforma els caràcters a cursiva"
 
-#: src/gui/SampleDialog.vala:41
-msgid "Copy to clipboard"
-msgstr ""
+#: src/gui/MainView.vala:117
+msgid "Original text recovered"
+msgstr "Text original recuperat"
 
-#: src/gui/SampleDialog.vala:46
-msgid "A sample Loremp ipsum text"
-msgstr ""
+#: src/gui/MainView.vala:292
+msgid "Text converted to bold and copied to the clipboard"
+msgstr "Text convertit a negreta i copiat al porta-retalls"
 
-#: src/gui/SampleDialog.vala:50
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in ligula "
-"sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis "
-"metus magna. Curabitur id metus volutpat risus sodales pretium. Vestibulum "
-"ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; "
-"Morbi rutrum dictum egestas. Mauris semper suscipit massa vitae facilisis. "
-msgstr ""
+#: src/gui/MainView.vala:467
+msgid "Text converted to italic and copied to the clipboard"
+msgstr "Text convertit a cursiva i copiat al porta-retalls"
 
-#: src/gui/SettingsMenu.vala:35
-msgid "Theme"
-msgstr ""
-
-#: src/gui/SettingsMenu.vala:41
-msgid "Light background"
-msgstr ""
-
-#: src/gui/SettingsMenu.vala:42
-msgid "Dark background"
-msgstr ""
-
-#: src/gui/SettingsMenu.vala:51 src/gui/WelcomeView.vala:32
+#: src/gui/SettingsMenu.vala:34
 msgid "Looking for help?"
-msgstr ""
+msgstr "¿Busques ajuda?"
 
-#: src/gui/SettingsMenu.vala:57
+#: src/gui/SettingsMenu.vala:40
 msgid "About…"
-msgstr ""
-
-#: src/gui/SettingsMenu.vala:89
-msgid "https://github.com/febrezo/Chartuner/master/doc/support/en/"
-msgstr ""
+msgstr "Sobre…"
 
 #: src/gui/WelcomeView.vala:30
-msgid "A sample application"
-msgstr ""
+msgid "Styling your text with pure Unicode"
+msgstr "Estilitzeu el text amb pur Unicode"
 
 #: src/gui/WelcomeView.vala:31
-msgid "Go to the main window"
-msgstr ""
+msgid "Style your text"
+msgstr "Dóna format al teu text"
 
 #: src/gui/WelcomeView.vala:31
-msgid "The standard behaviour of the application"
-msgstr ""
+msgid "Go to the transformation window!"
+msgstr "Veu a la finestra de transformació"
 
 #: src/gui/WelcomeView.vala:32
-msgid "Get support from online resources"
-msgstr ""
+msgid "What does this do?"
+msgstr "Què fa això?"
+
+#: src/gui/WelcomeView.vala:32
+#, fuzzy
+msgid "Get additional information of what happens under the hood"
+msgstr "Obteniu informació addicional sobre el que passa per sota"
+
+#: src/gui/WelcomeView.vala:33
+msgid "Wanna contribute?"
+msgstr "Vols col·laborar?"
+
+#: src/gui/WelcomeView.vala:33
+msgid "You can help to improve the application!"
+msgstr "Pots ajudar a millorar l'aplicació!"

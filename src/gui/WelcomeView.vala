@@ -29,7 +29,7 @@ namespace AppWidgets {
             this.title = _("Chartuner");
             this.subtitle = _("Styling your text with pure Unicode");
             this.append ("font", _("Style your text"), _("Go to the transformation window!"));
-            this.append ("dialog-question", _("What does this do?"), _("Get additional information of what happends under the hood"));
+            this.append ("dialog-question", _("What does this do?"), _("Get additional information of what happens under the hood"));
             this.append ("html", _("Wanna contribute?"), _("You can help to improve the application!"));
         }
     }
